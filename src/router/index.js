@@ -4,18 +4,23 @@ const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
 	routes: [
 		{
-			path: '/',
+			path: '/car',
 			name: 'main',
-			redirect: '/car',
-			component: () => import('../App.vue'),
-			children: [
-				{
-					path: '/car',
-					name: 'car',
-					component: () => import('../pages/Car.vue'),
-				}
-			]
+			component: () => import('../pages/Car.vue'),
 		}
+		// {
+		// 	path: '/',
+		// 	name: 'main',
+		// 	redirect: '/car',
+		// 	component: () => import('../App.vue'),
+		// 	children: [
+		// 		{
+		// 			path: '/car',
+		// 			name: 'car',
+		// 			component: () => import('../pages/Car.vue'),
+		// 		}
+		// 	]
+		// }
 	]
 })
 
