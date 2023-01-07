@@ -186,7 +186,7 @@
                 Масло {{ oil.oil }}
             </el-button>
 
-            <el-tag type="success">Сумма {{ totalSum(items) }} ₽</el-tag>
+            <el-tag type="success">Сумма {{ priceConvert(totalSum(items)) }} ₽</el-tag>
         </div>
     </footer>
 </template>
