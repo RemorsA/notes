@@ -183,7 +183,7 @@
                 style="margin: 0"
                 @click="oil.drawer = true"
             >
-                Масло {{ priceConvert(oil.oil) ? priceConvert(oil.oil) : '' }}
+                Масло {{ oil.oil }}
             </el-button>
 
             <el-tag type="success">Сумма {{ totalSum(items) }} ₽</el-tag>
