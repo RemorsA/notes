@@ -1,8 +1,10 @@
-<script setup></script>
+<script setup>
+	import car from '@/carJournal/Car.vue'
+</script>
 
 <template>
 	<div class="container">
-		<router-view></router-view>
+		<car></car>
 	</div>
 </template>
 
@@ -17,8 +19,19 @@
 	}
 
 	.container {
-        /* max-width: 425px;
-        margin: 0 auto; */
         padding: 5px;
     }
+
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+	::-webkit-scrollbar-track {
+		background-color: none;
+		padding: 5px;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: rgb(42, 42, 42);
+		border: 7px solid #121212;
+		border-radius: 10px;
+	}
 </style>
